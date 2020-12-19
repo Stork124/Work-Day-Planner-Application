@@ -1,5 +1,13 @@
-
+moment().format();
+  
+  
+  
+  /*
   for (i = 0; i < 10; i++) {
+   
+ 
+   
+   
     // Grab div to contain tables
     const timeBlockContainer = $("#timeBlockContainer");
    
@@ -20,6 +28,7 @@
             value: "No Event"
         })
         div1.append(input1);
+    
 
-
-}
+} 
+*/
