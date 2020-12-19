@@ -19,8 +19,12 @@
       rel="stylesheet"
     />
    
-    <link rel="stylesheet" href="practice.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
+
+    <!-- Script for Moment logic-->
+    <script defer src="time.js"></script>
+
   </head>
 
   <body>
@@ -31,13 +35,120 @@
     </header>
     <div id="timeBlockContainer" class="container">
       <!-- Timeblocks go here -->
-      
+        <div class="row 9am" id="row1">
+          <div class="col-2" style="border: black solid">
+            One of three columns
+          </div>
+          <div class="col-8" style="border: black solid">
+            <form>
+              <input class type="text" value="No Event "placeholder="No Event">
+            </form>
+          </div>
+          <div class="col-2" style="border: black solid">
+            <input type="submit" value="save">
+          </div>
+        </div>
+        <!--
+        <div class="row 10am" id="row2">
+          <div class="col-2" style="border: black solid">
+            One of three columns
+          </div>
+          <div class="col-8" style="border: black solid">
+            One of three columns
+          </div>
+          <div class="col-2" style="border: black solid">
+            One of three columns
+          </div>
+        </div>
 
+        <div class="row 11am" id="row3">
+          <div class="col-2" style="border: black solid">
+            One of three columns
+          </div>
+          <div class="col-8" style="border: black solid">
+            One of three columns
+          </div>
+          <div class="col-2" style="border: black solid">
+            One of three columns
+          </div>
+        </div>
 
-      <script defer src="./practice.js"></script>
+        <div class="row 12pm" id="row4">
+          <div class="col-2" style="border: black solid">
+            One of three columns
+          </div>
+          <div class="col-8" style="border: black solid">
+            One of three columns
+          </div>
+          <div class="col-2" style="border: black solid">
+            One of three columns
+          </div>
+        </div>
+
+        <div class="row 1pm" id="row5">
+          <div class="col-2" style="border: black solid">
+            One of three columns
+          </div>
+          <div class="col-8" style="border: black solid">
+            One of three columns
+          </div>
+          <div class="col-2" style="border: black solid">
+            One of three columns
+          </div>
+        </div>
+
+        <div class="row 2pm" id="row6">
+          <div class="col-2" style="border: black solid">
+            One of three columns
+          </div>
+          <div class="col-8" style="border: black solid">
+            One of three columns
+          </div>
+          <div class="col-2" style="border: black solid">
+            One of three columns
+          </div>
+        </div>
+
+        <div class="row 3pm" id="row7">
+          <div class="col-2" style="border: black solid">
+            One of three columns
+          </div>
+          <div class="col-8" style="border: black solid">
+            One of three columns
+          </div>
+          <div class="col-2" style="border: black solid">
+            One of three columns
+          </div>
+        </div>
+
+        <div class="row 4pm" id="row8">
+          <div class="col-2" style="border: black solid">
+            One of three columns
+          </div>
+          <div class="col-8" style="border: black solid">
+            One of three columns
+          </div>
+          <div class="col-2" style="border: black solid">
+            One of three columns
+          </div>
+        </div>
+
+        <div class="row 5pm" id="row9">
+          <div class="col-2" style="border: black solid">
+            One of three columns
+          </div>
+          <div class="col-8" style="border: black solid">
+            One of three columns
+          </div>
+          <div class="col-2" style="border: black solid">
+            One of three columns
+          </div>
+        </div>
+      -->
+
+      <!-- <script defer src="./index.js"></script> -->
     </div>
 
-    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
