@@ -11,11 +11,12 @@ for (i = 0; i < hourArr.length; i++) {
 
     //Create grid div
     const rowDiv = $("<div>");
-          rowDiv.addClass("row")
+          rowDiv.addClass("row");
+          
     //Create time block div
     const timeDiv = $("<div>");
           timeDiv.addClass("col-2");
-          timeDiv.text(hourArr[i])
+          timeDiv.text(hourArr[i]);
           
           
     //Create event block div
@@ -24,7 +25,7 @@ for (i = 0; i < hourArr.length; i++) {
     //Create save btn div
     const saveDiv = $("<div>");
           saveDiv.addClass("col-2");
-          saveDiv.text("SAVE")
+          saveDiv.text("SAVE");
 
     //Append  grid blocks to grid container
     rowDiv.append(timeDiv);
@@ -46,56 +47,22 @@ for (i = 0; i < hourArr.length; i++) {
     })
     eventDiv.append(input);
 
-    
+    //Condition to check current time against time blocks and change color for past/present/future
+    if (timeDiv.text() === moment().format('hA')){
+          rowDiv.removeClass("past future")
+          rowDiv.addClass("present")
+    } 
+    else if (parseInt(timeDiv.text()) > parseInt(moment().format('hA')) ||
+      timeDiv.text() == "1PM" && moment().format('hA') == "12PM" ||
+      parseInt(timeDiv.text()) <= 5 && parseInt(moment().format('hA')) <= 12) {
+          rowDiv.removeClass("present past");
+          rowDiv.addClass("future");
+    }
+    else {
+          rowDiv.removeClass("future present");
+          rowDiv.addClass("past");
+    }
+
 }
 
 
- 
-  /*
-  //Loop to generate tables
-  //for (i = 0; i < 10; i++) {
-
-
-    let timeBlockDiv = $("<div>")
-    let saveBtnDiv = $("<div>")
-    let time = moment().format('hA')
-
-      
-    if (timeBlockDiv.text() === time){
-    $(".eventBlock").addClass("present")
-    }
-    else {
-      $(".eventBlock").addClass("future")
-    }
-
-
-
- 
-   
-    // Grab div to contain tables
-    const timeBlockContainer = $("#timeBlockContainer");
-   
-   // Create/Append div to container div
-    const div1 = $("<div>");
-          timeBlockDiv.addClass('col-2')
-          timeBlockContainer.append(timeBlockDiv)
-          div1.addClass("row border col-8");
-          timeBlockContainer.append(div1);
-
-
-
-    // Create/Append input to div1
-    let input1 = $("<input>");
-        input1.attr({
-            class:"textarea",
-            class: "input",
-            id: "event",
-            name:" event",
-            type: "text",
-            value: "No Event"
-        })
-        div1.append(input1);
-    
-
-//} 
-*/
