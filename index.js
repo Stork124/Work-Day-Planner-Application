@@ -1,4 +1,4 @@
-let time = moment().hour(9);
+
 let hourArr = ['9AM','10AM','11AM','12PM','1PM','2PM','3PM','4PM','5PM'];
 
 
