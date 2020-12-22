@@ -33,13 +33,16 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div id="timeBlockContainer" class="container">
+    <div id="timeBlockContainer" class="container"></div>
+    
       <!-- Timeblocks go here -->
-        <div class="row 9am" id="row1">
-          <div class="col-2" style="border: black solid">
-            One of three columns
+       
+      <!--
+      <div class="row 9am" id="row1">
+          <div class="col-2 timeBlock" style="border: black solid">
+            9AM
           </div>
-          <div class="col-8" style="border: black solid">
+          <div class="col-8 eventBlock" style="border: black solid">
             <form>
               <input class type="text" value="No Event "placeholder="No Event">
             </form>
@@ -48,16 +51,18 @@
             <input type="submit" value="save">
           </div>
         </div>
-        <!--
+        
         <div class="row 10am" id="row2">
-          <div class="col-2" style="border: black solid">
-            One of three columns
+          <div class="col-2 timeBlock">
+            10AM
           </div>
-          <div class="col-8" style="border: black solid">
-            One of three columns
+          <div class="col-8 eventBlock" style="border: black solid">
+            <form>
+              <input class type="text" value="No Event "placeholder="No Event">
+            </form>
           </div>
           <div class="col-2" style="border: black solid">
-            One of three columns
+            <input type="submit" value="save">
           </div>
         </div>
 
@@ -146,7 +151,7 @@
         </div>
       -->
 
-      <!-- <script defer src="./index.js"></script> -->
+      <script defer src="./index.js"></script>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
