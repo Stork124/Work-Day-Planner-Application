@@ -43,7 +43,7 @@ for (i = 0; i < hourArr.length; i++) {
         id: "event",
         name:" event",
         type: "text",
-        value: "No Event"
+        value: "Add Event"
     })
     eventDiv.append(input);
 
