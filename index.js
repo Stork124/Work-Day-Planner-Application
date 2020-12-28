@@ -25,7 +25,7 @@ for (i = 0; i < hourArr.length; i++) {
     //Create save btn div
     const saveDiv = $("<div>");
           saveDiv.addClass("col-2");
-          saveDiv.text("SAVE");
+          saveDiv.html("<button>SAVE</button>");
 
     //Append  grid blocks to grid container
     rowDiv.append(timeDiv);
